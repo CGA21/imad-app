@@ -42,7 +42,7 @@ articlethree:{
 
 function createTemplate(data){
 
-var title=data.titlel;
+var title=data.title;
 var date=data.date;
 var content=data.content;
 var htmlTemplate=`<html>
