@@ -48,7 +48,7 @@ var content=data.content;
 var htmlTemplate=`<html>
   <head>
       <title>
-          Article One by CG
+          ${title}
       </title>
     <link href="/ui/style.css" rel="stylesheet" />
   </head>  
@@ -59,7 +59,7 @@ var htmlTemplate=`<html>
           </div>
           <hr/>
           <h3>
-              ${article}
+              Article
           </h3>
           <div>
              ${date}
