@@ -3,6 +3,8 @@ var morgan = require('morgan');
 var path = require('path');
 
 var app = express();
+app.use(morgan('combined'));
+
 
 var articles={
 'article-one':{
@@ -77,7 +79,7 @@ var htmlTemplate=`<html>
 </html>`;
 return htmlTemplate;
 }
-app.use(morgan('combined'));
+
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
